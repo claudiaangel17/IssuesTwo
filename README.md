@@ -7,60 +7,47 @@
   Add your open source license, GitHub uses MIT license.
 -->
 
-# Introduction to GitHub Issues
+# Collaborating with GitHub Issues
 
-_Collaborate and work together through GitHub Issues._
+_Level up your project workflow with labels, templates, milestones, and issue-powered collaboration._
 
 </header>
 
-## Step 1: Creating an Issue
+<!--
+  <<< Author notes: Course start >>>
+  Include start button, a note about Actions minutes,
+  and tell the learner why they should take the course.
+-->
 
-Welcome to GitHub Issues!
+## Welcome
 
-### :question: What is an Issue?
+GitHub Issues are more than just task trackers—they’re powerful tools to plan, manage, and collaborate with your team. This course will guide you beyond the basics and into practical strategies to enhance your team’s productivity using Issues.
 
-An **Issue** is a task, bug, or feature request that you can track and follow up on within a project. It's a great way to manage tasks and let your team know what needs to get done.
+- **Who is this for**: Developers, designers, project managers—anyone who collaborates on GitHub projects.
+- **What you'll learn**: How to organize and streamline work using labels, milestones, templates, and cross-references.
+- **What you'll build**: A real issue workflow using labels, templates, and auto-closing pull requests.
+- **Prerequisites**: Introduction to Issues GitHub Skill
+- **How long**: 15–20 minutes
 
-The best way to start tracking work is by opening an issue. When creating an issue, you can write clear descriptions and apply labels to help your team understand and prioritize it. The key is to provide a **concise and detailed description** of the task at hand, along with any relevant context.
-
----
-
-### :keyboard: Task: Open an Issue
-
-1. Go to the **Issues** tab in your GitHub repository.
-2. Navigate to the main page of your repository on GitHub.
-3. Under your repository name, click **Issues**.
-4. Click **New issue** to create a new one.
-5. If your repository uses issue templates:
-   - Click **Get started** next to the type of issue you'd like to open.
-6. If not:
-   - Click **Open a blank issue**.
-
----
-
-### 📝 Fill Out the Issue Form
-
-7. In the **Title** field, type a clear and concise summary of the task or problem.
-8. In the **Comment body** field, provide a detailed description of your issue:
-   - Include any relevant context.
-   - Add background information or reproduction steps.
+### In this course, you’ll learn how to:
+1. Add and remove labels from issues
+2. Use issue templates for consistency
+3. Link issues and pull requests for automatic closures
+4. Cross-reference issues and PRs for better context
+5. Understand GitHub Actions triggers behind these interactions
 
 ---
 
-### :label: Add a Label to Your Issue
+### 🚀 How to start this course
 
-Adding a label helps categorize your issue and allows it to be easily referenced in pull requests or discussions.
+[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=bryceshen1&template_name=base&owner=%40me&name=bryceshen1-base&description=My+clone+repository&visibility=public)
 
-1. In the horizontal navigation bar, go to the **Issues** tab (highlighted in orange).
-2. Above the list of issues or pull requests, click **Labels**.
-3. To the right of the search field, click **New label**.
-4. Under **Label name**, enter a name for your label.
-5. Under **Description**, type a brief explanation to help others understand the label’s purpose.
-6. Click **Create label** / **Save changes** / **Delete** depending on your task.
-
----
-
-When you're finished, click **Submit new issue** to create and publish the issue. :tada:
+1. Right-click **Start course** and open the link in a new tab.
+2. Fill out the form to create your own copy of the course repository.
+   - For owner, choose your personal account or organization.
+   - Public repositories are recommended, as private ones will [consume GitHub Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
+3. Click **Create repository** and wait about 20 seconds.
+4. Refresh the page and follow the instructions in your new repository.
 
 <footer>
 
@@ -71,9 +58,9 @@ When you're finished, click **Submit new issue** to create and publish the issue
 
 ---
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/review-pull-requests) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/review-pull-requests) &bull; [GitHub status](https://www.githubstatus.com/)
 
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
 
 </footer>
+
