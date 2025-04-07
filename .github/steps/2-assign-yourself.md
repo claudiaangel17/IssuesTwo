@@ -1,29 +1,43 @@
-## Step 2: Collaborating on Issues
+## Step 2: Adding a Label
 
-Well done creating an issue! :wave:
+Now that you've created an issue, let's learn how to **categorize and prioritize** it using labels!
 
-### What is Collaboration on Issues?
+### 🏷️ What is a Label?
 
-Collaboration on issues is an array of ways for teams to work together, manage, and resolve issues. It involves communication, feedback, and teamwork to track, solve, and complete problems effectively.
+Labels help you organize, sort, and quickly understand issues in a project. You can use labels to mark issues as `bug`, `enhancement`, `documentation`, or even custom categories like `good first issue` or `high priority`.
 
-### Key Elements of Collaborating on an Issue:
-
-- **Commenting**: Team members can comment on an issue to ask questions, provide feedback, or clarify details.
-
-- **@Mentions**: You can `@mention` team members in comments to notify them and involve them directly in the conversation.
-
-- **Tracking Progress**: Team members can update the status or provide updates, keeping everyone informed about the progress.
+They’re also great for automating workflows—GitHub Actions can respond to labels being added or removed!
 
 ---
 
-### How to Comment on an Issue
+### :keyboard: Task: Add a Label to Your Issue
 
-1. Open the issue you want to comment on.
-2. Scroll down to the comment section at the bottom of the page.
-3. Make sure you format your comment to be in between 2 asterisks: `**comment_name**`
-4. Type your comment in the text box. You can provide an update such as:  
-   `**The task is complete**` or `**Issue resolved, everything is working as expected**`
-5. You can also mention a team member in your comment:
-   - While writing your comment, type `@` followed by the username of the person you want to mention (e.g., `@username`).
-   - This will notify the person, allowing them to respond or take action.
-6. Once you’ve written your message, click the **Comment** button to post it.
+Let’s walk through how to create and apply a label to your issue:
+
+#### ✅ Step 1: Navigate to Your Issue
+1. Click on the **Issues** tab in your repository.
+2. Select the issue you just created in Step 1.
+
+#### 🏷️ Step 2: Add an Existing Label
+1. On the right sidebar of the issue page, click the **Labels** dropdown.
+2. Select a label that best describes your issue.
+   - Example: `bug`, `feature`, or `help wanted`
+
+#### ✨ Optional: Create a New Label
+If you don’t see a label you want:
+1. Click the **Labels** tab in the repository navigation (next to Issues).
+2. Click **New label**.
+3. Fill in the label name, description, and pick a color.
+4. Click **Create label**.
+5. Return to your issue and apply your new label.
+
+---
+
+### 🎯 Why This Matters
+
+Using labels helps your team:
+- Prioritize what to work on first
+- Understand issue type at a glance
+- Automate workflows and organize sprints
+
+Once you’ve labeled your issue, you're one step closer to mastering issue management! 🙌
