@@ -1,10 +1,10 @@
-name: Step 2, Commenting on an issue
+name: Step 2, Adding a Label to an Issue
 
 on:
   workflow_dispatch:
-  issue_comment:
+  issues:
     types:
-      - created
+      - labeled
 
 permissions:
   contents: write
@@ -26,13 +26,13 @@ jobs:
     outputs:
       current_step: ${{ steps.get_step.outputs.current_step }}
 
-  on_comment_issue:
-    name: On comment issue
+  on_label_added:
+    name: On label added
     needs: get_current_step
     if: >-
       ${{ !github.event.repository.is_template
           && needs.get_current_step.outputs.current_step == '2'
-          && github.event.comment.body != '' }}
+          && github.event.label.name != '' }}
 
     runs-on: ubuntu-latest
 
@@ -41,7 +41,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          ref: main # Ensure it fetches from the main/default branch.
+          ref: main
 
       - name: Update to step 3
         uses: skills/action-update-step@v2
@@ -50,3 +50,4 @@ jobs:
           from_step: 2
           to_step: 3
           branch_name: update-game
+
