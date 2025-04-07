@@ -1,4 +1,4 @@
-## Step 0: Creating an Issue
+## Step 1: Creating an Issue
 
 Before diving into labels, templates, and milestones, here’s a quick reminder of what a GitHub Issue is.
 
