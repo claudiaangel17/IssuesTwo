@@ -1,11 +1,8 @@
-name: Step 5, Link PR to Issue
+name: Step 5, Create a Pull Request
 
 on:
-  workflow_dispatch:
   pull_request:
-    types: [closed]
-  issue_comment:
-    types: [created]
+    types: [opened]
 
 permissions:
   contents: write
@@ -17,6 +14,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - id: get_step
         run: |
           if [ -f .github/steps/-step.txt ]; then
@@ -27,15 +25,11 @@ jobs:
     outputs:
       current_step: ${{ steps.get_step.outputs.current_step }}
 
-  advance_if_linked_and_merged:
-    name: PR was merged and links to issue
+  advance_on_pr_created:
+    name: Advance to Step 6 on PR Creation
     needs: get_current_step
     if: >-
-      ${{
-        github.event.pull_request.merged == true &&
-        needs.get_current_step.outputs.current_step == '5' &&
-        contains(github.event.pull_request.body, 'closes #')
-      }}
+      ${{ needs.get_current_step.outputs.current_step == '5' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -43,7 +37,8 @@ jobs:
         with:
           fetch-depth: 0
           ref: main
-      - name: Update to step 6
+
+      - name: Update to Step 6
         uses: skills/action-update-step@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -51,27 +46,4 @@ jobs:
           to_step: 6
           branch_name: update-game
 
-  advance_if_finished_comment:
-    name: Fallback – learner typed "finished"
-    needs: get_current_step
-    if: >-
-      ${{
-        github.event_name == 'issue_comment' &&
-        needs.get_current_step.outputs.current_step == '5' &&
-        contains(github.event.comment.body, 'finished')
-      }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          ref: main
-      - name: Update to step 6
-        uses: skills/action-update-step@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          from_step: 5
-          to_step: 6
-          branch_name: update-game
 
