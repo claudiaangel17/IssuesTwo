@@ -1,36 +1,34 @@
-# Step 6: Cross-reference issues and pull requests
+## Step 6: Link and Merge the Pull Request
 
-Welcome to "Collaborate using GitHub Issues"! 👋  
-
-In this step, you'll learn how to cross-reference issues and pull requests (PRs). Cross-referencing is a simple way to connect related work across GitHub — so your team can easily navigate between ideas, tasks, and solutions.
+Now that your pull request is open, let’s link it to an issue so GitHub can automatically close the issue when your PR is merged.
 
 ---
 
-## What does it mean to cross-reference issues and pull requests?
+### 🔗 What Does It Mean to Link a Pull Request?
 
-Cross-referencing happens when you mention another issue or PR by its number — like `#3` — in a comment or description.
-
-This creates a clickable link and automatically updates the timeline of the mentioned issue or PR with a reference.
-
-Example:
-
-This lets everyone know:  
-→ This conversation is related to Issue #3.
+When you add `closes #issue_number` to the pull request description, GitHub automatically closes that issue after the PR is merged. This keeps your issues and code in sync.
 
 ---
 
-## Why is this helpful for PMs?
+### ✅ Task: Link and Merge Your Pull Request
 
-- Connects related ideas and work across the project.
-- Makes it easy to track context and dependencies.
-- Creates a clear record of discussions and decisions.
-- Helps non-technical team members follow the full story.
+#### ✏️ Step 1: Edit the PR Description
+1. Open your pull request.
+2. Click the **Edit** button near the PR description.
+3. Add this line to the description (replace `1` with your issue number): "close #1"
+4. Click **Save**.
 
 ---
 
-## ⌨️ Activity: Cross-reference an issue in a comment
+#### 🔀 Step 2: Merge the PR
+1. Scroll down to the bottom of the pull request.
+2. Click **Merge pull request**.
+3. Then click **Confirm merge**.
 
-1. Click the **Issues** tab at the top of this repository.
-2. Find the issue you created in Step 4 and click on it.
-3. Scroll to the bottom and add a comment.
-4. In your comment, reference another issue or pull request by typing:
+GitHub will now automatically close the linked issue 🎉
+
+---
+
+### ✅ [Finished](#)
+
+Comment `finished` below to move on to the final step.
