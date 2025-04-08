@@ -1,4 +1,4 @@
-## Step 6: Link and Merge the Pull Request
+## Step 5: Link and Merge the Pull Request
 
 Now that your pull request is open, let’s link it to an issue so GitHub can automatically close the issue when your PR is merged.
 
