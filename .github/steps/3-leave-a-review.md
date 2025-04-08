@@ -27,6 +27,8 @@ For example, you might create a milestone called `v1.0 Launch` and assign all re
 2. On the right sidebar, click the **Milestone** dropdown.
 3. Select the milestone you just created.
 
+#### 📌 Step 3: Comment "Finish"
+
 ---
 
 ### 💡 Why Milestones Matter
@@ -40,6 +42,3 @@ Milestones keep teams aligned and projects on schedule 🚀
 
 ---
 
-### ✅ [Finished](#)
-
-Click the **[Finished]** link above when you've completed this step!
