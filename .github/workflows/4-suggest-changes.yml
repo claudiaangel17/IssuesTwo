@@ -1,11 +1,10 @@
-
-name: Step 4, Close an Issue
+name: Step 4, Create an Issue with Template
 
 on:
   workflow_dispatch:
   issues:
     types:
-      - closed
+      - opened
 
 permissions:
   contents: write
@@ -27,8 +26,8 @@ jobs:
     outputs:
       current_step: ${{ steps.get_step.outputs.current_step }}
 
-  on_close_issue:
-    name: On close issue
+  on_create_issue:
+    name: On issue created using template
     needs: get_current_step
     if: >-
       ${{ !github.event.repository.is_template
@@ -50,3 +49,4 @@ jobs:
           from_step: 4
           to_step: 5
           branch_name: update-game
+
