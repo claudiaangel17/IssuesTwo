@@ -20,12 +20,4 @@ That’s it! Your PR has been opened.
 
 ---
 
-### ✅ [Finished](#)
-
-Comment `finished` below to move on to the next step.
-
-
-### ✅ [Finished](#)
-
-Once your pull request is merged and correctly linked, comment `finished` below if the next step doesn’t start automatically.
 
