@@ -1,15 +1,16 @@
-name: Step 5, Create a Pull Request
+name: Step 5, Link and Merge the Pull Request
 
 on:
   pull_request:
-    types: [opened]
+    types:
+      - closed
 
 permissions:
   contents: write
 
 jobs:
   get_current_step:
-    name: Get current step number
+    name: Check current step number
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -25,12 +26,18 @@ jobs:
     outputs:
       current_step: ${{ steps.get_step.outputs.current_step }}
 
-  advance_on_pr_created:
-    name: Advance to Step 6 on PR Creation
+  on_merge_linked_pr:
+    name: On PR Merged with Linked Issue
     needs: get_current_step
     if: >-
-      ${{ needs.get_current_step.outputs.current_step == '5' }}
+      ${{ 
+        !github.event.repository.is_template &&
+        needs.get_current_step.outputs.current_step == '5' &&
+        github.event.pull_request.merged == true &&
+        contains(github.event.pull_request.body, 'closes #')
+      }}
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,12 +45,12 @@ jobs:
           fetch-depth: 0
           ref: main
 
-      - name: Update to Step 6
+      - name: Update to Step X
         uses: skills/action-update-step@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           from_step: 5
-          to_step: 6
+          to_step: X
           branch_name: update-game
 
 
