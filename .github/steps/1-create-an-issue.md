@@ -8,7 +8,7 @@ An **Issue** is a way to track work, ask questions, report bugs, or suggest idea
 
 ---
 
-### :keyboard: Task: Create a New Issue
+### :keyboard: Task: Create a new issue
 
 1. Go to the **Issues** tab of your repository.
 2. Click **New issue**.
