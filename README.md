@@ -29,7 +29,7 @@ GitHub Issues are more than just task trackers—they’re powerful tools to pla
 - **Prerequisites**: Introduction to Issues GitHub Skill
 - **How long**: 15–20 minutes
 
-### In this course, you’ll learn how to:
+In this course, you’ll learn how to:
 1. Add and remove labels from issues
 2. Use issue templates for consistency
 3. Link issues and pull requests for automatic closures
