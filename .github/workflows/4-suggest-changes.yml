@@ -34,8 +34,7 @@ jobs:
     # 3. The comment contains the keyword "update-game".
     if: >-
       ${{ !github.event.repository.is_template
-          && needs.get_current_step.outputs.current_step == '4'
-          && contains(github.event.comment.body, 'update-game') }}
+          && needs.get_current_step.outputs.current_step == '4'}}
 
     runs-on: ubuntu-latest
 
