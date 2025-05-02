@@ -24,6 +24,7 @@ Let’s create a pull request from the branch you’ve been working on (`update-
 1. Click **Create pull request**.
 2. Give your PR a brief title and description (or leave the default).
 3. Click **Create pull request** again to submit.
+4. Finally, comment "pull request created" in the most recent Issue.
 
 🎉 You’ve just opened your first pull request!
 
